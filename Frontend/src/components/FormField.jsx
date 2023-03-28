@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FormField = ({
   labelName,
@@ -12,10 +12,7 @@ const FormField = ({
 }) => (
   <div>
     <div className="flex items-center gap-2 mb-2">
-      <label
-        htmlFor={name}
-        className="block text-sm font-medium text-gray-900"
-      >
+      <label htmlFor={name} className="block text-sm font-medium text-gray-300">
         {labelName}
       </label>
       {isSurpriseMe && (
@@ -32,7 +29,7 @@ const FormField = ({
       type={type}
       id={name}
       name={name}
-      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#6469ff] focus:border-[#6469ff] outline-none block w-full p-3"
+      className="bg-[#1a1a1a] border border-[#383838] text-gray-200 text-sm rounded-lg focus:ring-[#7127BA] focus:border-[#7127BA] outline-none block w-full p-3"
       placeholder={placeholder}
       value={value}
       onChange={handleChange}

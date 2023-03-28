@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --transition: all 400ms ease;
+}
+* {
+    font-family: "Poppins", "Poppins Medium", sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    .card:nth-child(7n + 1) {
+        grid-column: auto/span 2;
+        grid-row: auto/span 2;
+    }
+}
+
+.prompt::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.prompt::-webkit-scrollbar-thumb {
+  background-color: #666e75;
+  border-radius: 5px;
+}
+
+.noise{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+     background-image: url("https://uploads-ssl.webflow.com/6220a5756f730b42d2635479/629771d110a3b88ae69b88d1_noise.gif"); 
+    background-position: 0 0;
+    background-size: auto;
+    opacity: 0.036;
+    pointer-events: none;
+}
+
+header{
+    background-color: rgb(113, 39, 186);
+    box-shadow: rgba(113, 39, 186, 0.75) 0px 0px 40px 5px;
+    position: relative;
+}
+
+.transition{
+    transition: var(--transition);
+
+}
+
